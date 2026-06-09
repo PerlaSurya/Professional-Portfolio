@@ -1,0 +1,575 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Perla Surya - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "background": "#0d1516",
+                "on-background": "#dce4e5",
+                "on-primary-fixed": "#001f24",
+                "outline": "#333333",
+                "surface-container": "#192122",
+                "surface-container-high": "#242b2d",
+                "on-secondary": "#00208e",
+                "on-error": "#690005",
+                "surface-container-lowest": "#080f11",
+                "primary-fixed-dim": "#00daf3",
+                "outline-variant": "#3b494c",
+                "on-secondary-container": "#d1d6ff",
+                "surface-dim": "#0d1516",
+                "surface": "#0d1516",
+                "surface-dark": "#0a0a0a",
+                "on-primary": "#00363d",
+                "bg-black": "#000000",
+                "on-surface-variant": "#bac9cc",
+                "tertiary-fixed-dim": "#f3bf26",
+                "on-primary-container": "#00626e",
+                "on-error-container": "#ffdad6",
+                "on-secondary-fixed": "#00115a",
+                "surface-tint": "#00daf3",
+                "on-surface": "#dce4e5",
+                "error-container": "#93000a",
+                "surface-container-highest": "#2e3638",
+                "inverse-surface": "#dce4e5",
+                "primary-container": "#00e5ff",
+                "surface-container-low": "#151d1e",
+                "surface-variant": "#2e3638",
+                "secondary-fixed": "#dee0ff",
+                "on-secondary-fixed-variant": "#0031c6",
+                "on-primary-fixed-variant": "#004f58",
+                "secondary-fixed-dim": "#bac3ff",
+                "primary-fixed": "#9cf0ff",
+                "surface-bright": "#333a3c",
+                "tertiary-fixed": "#ffdf96",
+                "on-tertiary-fixed": "#251a00",
+                "inverse-on-surface": "#2a3233",
+                "secondary-container": "#0743ff",
+                "on-tertiary-fixed-variant": "#594400",
+                "tertiary": "#ffeac0",
+                "on-tertiary-container": "#6f5500",
+                "tertiary-container": "#fec931",
+                "on-tertiary": "#3e2e00",
+                "inverse-primary": "#006875",
+                "error": "#ffb4ab",
+                "secondary": "#bac3ff",
+                "primary": "#c3f5ff",
+                "accent-red": "#ff003c"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "section-gap": "120px",
+                "margin-mobile": "16px",
+                "margin-desktop": "64px",
+                "stack-lg": "48px",
+                "gutter": "24px",
+                "stack-sm": "8px",
+                "container-max": "1280px",
+                "stack-md": "24px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Sora"
+                ],
+                "display-lg": [
+                        "Sora"
+                ],
+                "label-md": [
+                        "JetBrains Mono"
+                ],
+                "caption": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Sora"
+                ],
+                "headline-lg": [
+                        "Sora"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.4",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            background-color: #0d1516;
+        }
+        .glass-panel {
+            background: rgba(13, 21, 22, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 0, 60, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-panel:hover {
+            border-color: rgba(255, 0, 60, 0.5);
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 0, 60, 0.5);
+        }
+        .ambient-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 0, 60, 0.05) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255, 0, 60, 0.3);
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 11px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff003c;
+            box-shadow: 0 0 10px rgba(255, 0, 60, 0.8);
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md relative overflow-x-hidden bg-background max-w-[1440px] mx-auto">
+<!-- Ambient Background Glows -->
+<div class="ambient-glow top-0 left-0"></div>
+<div class="ambient-glow bottom-0 right-0"></div>
+<div class="ambient-glow top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full h-[80px] bg-surface/80 backdrop-blur-md dark:bg-surface/80 border-b border-outline-variant shadow-sm z-50 transition-all duration-300 ease-in-out max-w-[1440px] mx-auto left-0 right-0">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full h-full max-w-[1440px]">
+<a class="flex items-center gap-3 hover:opacity-80 transition-opacity" href="#">
+<img alt="Perla Surya Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKHFRcMTJyu4GKWxCEkUb4z3xxpib2Q9y2tFAmPuXJTHrrAJi6qPBGJ1khFr4oVEr0IUMjqoklGzXOvow-Hjec4bAQLBcvmlpSx1OGFtIE-iE7LNjGsEkfaP3HwUxYBtUz0KHOanECSALmg-ZETeAjwlKuG6Wooi_rqenE5_ZtzMAyx_La-H2W8jXLH78lkcyX5cUze2_-zdaY1z4mJ7aCYkWfCYIXStXL47LbJ9SXjifpgoXGinypnrCtrh8Wwz0LwtPrMCpmBTw3">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter hover:text-accent-red hover:shadow-[0_0_20px_rgba(255,0,60,0.2)] transition-colors hidden sm:block">Perla Surya</span>
+</a>
+<div class="hidden lg:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-accent-red border-b-2 border-accent-red pb-1" href="#home">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#experience">Experience</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#projects">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#skills">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#certifications">Certifications</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="#contact">Contact</a>
+</div>
+<button class="bg-accent-red text-bg-black font-label-md text-label-md px-6 py-2 rounded-lg hover:shadow-[0_0_20px_rgba(255,0,60,0.5)] transition-all">
+                Resume
+            </button>
+</div>
+</nav>
+<main class="relative z-10 pt-[120px] pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap flex flex-col md:flex-row items-center gap-stack-lg scroll-mt-24" id="home">
+<div class="flex-1 space-y-stack-md"><div class="inline-flex items-center gap-2 glass-panel px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-accent-red animate-pulse"></span><span class="font-label-md text-label-md text-on-surface">Available for opportunities</span></div><h1 class="font-display-lg text-display-lg text-accent-red glow-text">Hi, I'm Perla Surya.</h1><h2 class="font-headline-lg text-headline-lg text-on-surface">Software Engineer &amp; Innovator</h2><blockquote class="border-l-2 border-accent-red/50 pl-4 italic font-body-md text-on-surface-variant/80 mb-6">"Some accept the world as it is. I prefer to ask why?"</blockquote><div class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"><p class="">Curious by nature and always looking beyond the obvious. I enjoy exploring technology, understanding how systems work, and asking questions that most people overlook. Whether it's software, artificial intelligence, gaming, or the bigger questions about existence, I'm driven by a desire to learn, understand, and continuously evolve.</p></div><div class="flex gap-4"><a class="bg-accent-red text-bg-black font-label-md text-label-md px-8 py-3 rounded-lg hover:shadow-[0_0_20px_rgba(255,0,60,0.5)] transition-all inline-block" href="#projects">View Work</a><a class="glass-panel text-accent-red font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-accent-red/10 transition-all inline-block" href="#contact">Contact Me</a></div></div>
+<div class="flex-1 flex justify-center">
+<div class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-2 border-accent-red/50 shadow-[0_0_40px_rgba(255,0,60,0.3)] max-w-full">
+<img alt="Perla Surya Profile Photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChMpf2lgAdzHgYvWE8wpUFJNpSJ35gsVSuMJ8tccph6XtBO11n0cZmVeuc9dPBxkbMsnNwgebzjFrvlEgwRw-MoZRFfVj29jLOdz7R4CsZMktbWZkdKIJaJgyE6uyHZoVzBlxt39jH26Vdw4EXAkG4k57I70_-xouYV6dp6YhJSSDiipxPM2M9fCG13HYW4PR_y2xHxTo2EERfJqqDYS3g2rxeRB-H4sgp0kj7xoiMvztZVCUbFzvXq_WAaIaJKmFpvedi58rCL0Q3">
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24" id="about">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-md flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">person</span>
+                About Me
+            </h2>
+<div class="glass-panel p-8 rounded-xl">
+<div class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed space-y-4"><p class="">Technology is what I do. Curiosity is what drives me.</p><p class="">I am a Software Engineer at HCLTech with experience across Microsoft, Meta Virtual Reality, and Xerox ecosystems. My work focuses on Quality Engineering, Product Validation, and Software Testing, while my interests extend into Cloud Computing, Artificial Intelligence, and emerging technologies.</p><p class="">I enjoy understanding how systems work beneath the surface, challenging assumptions, and continuously learning. Some accept the world as it is. I prefer to ask why.</p></div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24" id="experience">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">work</span>
+                Experience
+            </h2>
+<div class="relative pl-10 space-y-12">
+<div class="timeline-line"></div>
+<!-- Experience Item 1 -->
+<div class="relative">
+<div class="timeline-dot top-2"></div>
+<div class="glass-panel p-6 rounded-xl hover:translate-x-2 transition-transform">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Senior Product Engineer at Microsoft</h3>
+<p class="font-label-md text-label-md text-accent-red mb-3">Engagement via HCLTech | Jun 2025 - Present</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Leading product development initiatives, architecting scalable solutions, and collaborating with cross-functional teams to deliver high-quality software products for enterprise clients.</p>
+</div>
+</div>
+<!-- Experience Item 2 -->
+<div class="relative">
+<div class="timeline-dot top-2"></div>
+<div class="glass-panel p-6 rounded-xl hover:translate-x-2 transition-transform">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">VR Test Engineer at Meta</h3>
+<p class="font-label-md text-label-md text-accent-red mb-3">Engagement via HCLTech | Jul 2024 - Jun 2025</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Developed comprehensive testing frameworks for virtual reality applications, ensuring optimal performance, user experience, and stability across various hardware platforms.</p>
+</div>
+</div>
+<!-- Experience Item 3 -->
+<div class="relative">
+<div class="timeline-dot top-2"></div>
+<div class="glass-panel p-6 rounded-xl hover:translate-x-2 transition-transform">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Test Engineer at Xerox</h3>
+<p class="font-label-md text-label-md text-accent-red mb-3">Engagement via HCLTech | Sep 2022 - Aug 2024</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Implemented automated testing strategies, reduced regression testing time significantly, and contributed to the continuous integration and delivery pipelines for core software products.</p>
+</div>
+</div>
+<!-- Experience Item 4 -->
+<div class="relative">
+<div class="timeline-dot top-2"></div>
+<div class="glass-panel p-6 rounded-xl hover:translate-x-2 transition-transform">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Sparks</h3>
+<p class="font-label-md text-label-md text-accent-red mb-3">HCLTech | Sep 2022 - Present</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Active participant and contributor in the Sparks program, engaging in technical deep dives, innovation challenges, and knowledge-sharing sessions within the organization.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24" id="projects">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">code_blocks</span>
+                Featured Projects
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Project 1 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">flapmind-ai</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Self-Learning Game AI using Flappy Bird and Genetic Algorithm.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-accent-red">AI / Python</span>
+<a class="text-on-surface hover:text-accent-red transition-colors flex items-center gap-1" href="https://github.com/PerlaSurya/flapmind-ai" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> GitHub
+                        </a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">HCL Policies Web App</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Web application built for managing and navigating internal corporate policies efficiently.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-accent-red">HTML / Web</span>
+<a class="text-on-surface hover:text-accent-red transition-colors flex items-center gap-1" href="https://github.com/PerlaSurya/Web-Application-Project-BITS-HCL-Policies" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> GitHub
+                        </a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Retail Data Analysis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Data analysis project focusing on retail store and online store customer data.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-accent-red">Data / Analytics</span>
+<a class="text-on-surface hover:text-accent-red transition-colors flex items-center gap-1" href="https://github.com/PerlaSurya/Project-Code" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> GitHub
+                        </a>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Professional Portfolio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Personal portfolio website demonstrating web development skills and showcasing projects.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-md text-label-md text-accent-red">CSS / Design</span>
+<a class="text-on-surface hover:text-accent-red transition-colors flex items-center gap-1" href="https://github.com/PerlaSurya/PerlaSurya_Portfolio" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> GitHub
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Arsenal Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24" id="skills">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">build</span>
+                Technical Arsenal
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<div class="glass-panel p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 border-b border-outline-variant pb-2">Programming &amp; AI</h3>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Python</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Java</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Machine Learning</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Generative AI</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Web Technologies (HTML/CSS/JS)</li>
+</ul>
+</div>
+<div class="glass-panel p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 border-b border-outline-variant pb-2">Cloud &amp; Data</h3>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Amazon Web Services (AWS)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Microsoft Azure</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Google Cloud Platform (GCP)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Power BI</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> SQL &amp; Data Analytics</li>
+</ul>
+</div>
+<div class="glass-panel p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 border-b border-outline-variant pb-2">Tools &amp; DevOps</h3>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Git &amp; GitHub Actions</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> GitHub Copilot</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Docker &amp; Kubernetes</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> CI/CD Pipelines</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-red rounded-full"></span> Automated Testing Frameworks</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Certifications Gallery Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24" id="certifications">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                Certifications Gallery
+            </h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Certification 1 -->
+<div class="glass-panel p-4 rounded-xl text-center group">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="AWS Cloud Practitioner" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkbz-jBynjGGx0wLfHjnIwVtlviF66Cf56Ze-IzEy_l2SjtgL309hYzHqdPeeoR2bilhktdHPsNjjTHYHs7U6bnXicGfgJE_1PEdHh5m4BVMpx3d_9rNia-MGLLRiKtYLMRkHBpSuY8LDADKOsXIxREPYg7F5IvUTWy7l1DQfuplxWipnggc8S41Ycjne04WZFcQgMgkiLY_BGfmtTj3LFpuL6Q8CaYgzVQ2UkRLWGq6GkkMPOXnBcGRevvRC0yoLHohZIQS09A1xd">
+</div>
+<p class="font-label-md text-label-md text-on-surface">AWS Cloud Practitioner</p>
+</div>
+<!-- Certification 2 -->
+<div class="glass-panel p-4 rounded-xl text-center group">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="Azure AI Fundamentals" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7BVAlLeD8mG81pUgegDJp6dT91TMW97DKC7srMa9MfUcCCINSxip9gtO06i0OLsQ5tMkhOd0KB3L1XE0ziCqqELs4C9BdQgztFiM1MNNr62HsciFWtUKw6VhBBT_dK4UgZVtmOXalXiykDWWUYt8JYrhSrR8a40RgmXLsgg1EWsMszA0dMk7sOIgea1RgwpywXyV32lYDDEZv0DdQ75IZmq51EcTAhCFA1wyNl8vtDIgH8fFCJ5v4UPqMrcivAQDOctCJ9ibGrXDs">
+</div>
+<p class="font-label-md text-label-md text-on-surface">Azure AI Fundamentals</p>
+</div>
+<!-- Certification 3 -->
+<!-- Certification 4 -->
+<div class="glass-panel p-4 rounded-xl text-center group">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="GitHub Copilot" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgoOL1wfSymaLJWk313HnZmYM3YGq2otdCi1LwMcjLwfx-2Jn-vMiV_SO_uUDd7no7AuH5yYXZPh15peb2TnLAvLXCrNlmydGGT6luyE_oCLXUvutc0_V7Wz2U9-Th_61pezgPX4rANpGTBlO_t8IFqNxxNO8S_3heeesDrYpJB3ACOD45kF7gUkJHWYhwz_FDvlfxtSr3227LqIX_Dtp8kOLfNEjU8C8Dbmvz96wI4QURehjdqE79b-MML4QsFZnycIiMKncu96FZ">
+</div>
+<p class="font-label-md text-label-md text-on-surface">GitHub Copilot</p>
+</div>
+<!-- Hidden Certifications -->
+<div class="glass-panel p-4 rounded-xl text-center group hidden cert-more">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="Power BI Data Analyst" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvKWGCnOPmKh-UtBpF0z5UDdIXDb4aPR6enshPGhz8SctFb_VSbNKcHC6D7d0Kglq_ublXPI6CbgMgsSzxVAiUiIZ3G4cAWiLicXwBXqqF4nfMABZ_A7IYGbEYfWdEwqtgzDEG8cTjdLPpPGAwWoE4p3aSmlnIZs7ublbcS603UyYofcy8rS2C3iACKWzIr0t8dPiSGgBPX2n848GZCTlbS8nyAiemA56e0QxRP8dlmwJaOY8JP1ObBYg">
+</div>
+<p class="font-label-md text-label-md text-on-surface">Power BI Data Analyst</p>
+</div>
+<div class="glass-panel p-4 rounded-xl text-center group hidden cert-more">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="Red Hat Partner Program" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvKWGCnOPmKh-UtBpF0z5UDdIXDb4aPR6enshPGhz8SctFb_VSbNKcHC6D7d0Kglq_ublXPI6CbgMgsSzxVAiUiIZ3G4cAWiLicXwBXqqF4nfMABZ_A7IYGbEYfWdEwqtgzDEG8cTjdLPpPGAwWoE4p3aSmlnIZs7ublbcS603UyYofcy8rS2C3iACKWzIr0t8dPiSGgBPX2n848GZCTlbS8nyAiemA56e0QxRP8dlmwJaOY8JP1ObBYg">
+</div>
+<p class="font-label-md text-label-md text-on-surface">Red Hat Partner Program</p>
+</div>
+<div class="glass-panel p-4 rounded-xl text-center group">
+<div class="h-[380px] w-full flex items-center justify-center mb-4">
+<img alt="Google Cloud Digital Leader" class="max-h-full max-w-full rounded-lg opacity-80 group-hover:opacity-100 transition-opacity object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mFp3g5kCpfJORcbQJZj64WCdooEi8BViQz5TMCJUmtTaySbrEli_gXPV-IIERfUbB-cyjlogkYu9CNCjUZ8FSu8bzsKTxpvPoR0Fl6vT7gkzfLFvt-2ZO_LJKUENjiUsRbqmkSU5mdsLc726HsC0jzzrHJZm9iYdHTlNQXSXOI99wgTYITZTUBNhVhUDD4fMJ2_TasHFJ9AVF76GoR_8H1CyxDcxuMx6U_sTMuQNp8jl07bgHV8YXSwGkeBxbE2oi7iJwwcjUBv4">
+</div>
+<p class="font-label-md text-label-md text-on-surface">Google Cloud Digital Leader</p>
+</div></div>
+<div class="mt-8 text-center">
+<button class="glass-panel text-accent-red font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-accent-red/10 transition-all inline-flex items-center gap-2" id="toggle-certs">
+<span class="">View More</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Achievements & Volunteering Grid Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Awards & Achievements -->
+<div>
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-md flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">emoji_events</span>
+                    Awards &amp; Achievements
+                </h2>
+<div class="space-y-4">
+<div class="glass-panel p-5 rounded-xl flex items-center gap-4 border-l-4 border-l-accent-red relative group">
+<span class="material-symbols-outlined text-accent-red text-3xl">star</span>
+<div>
+<h4 class="font-headline-md text-lg text-on-surface">Sparks Award 2025</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Excellence and innovation in technical contributions.</p>
+</div>
+<a class="absolute top-4 right-4 text-xs font-label-md text-accent-red opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">visibility</span> View Activity</a>
+</div>
+<div class="glass-panel p-5 rounded-xl flex items-center gap-4 border-l-4 border-l-accent-red relative group">
+<span class="material-symbols-outlined text-accent-red text-3xl">psychology</span>
+<div>
+<h4 class="font-headline-md text-lg text-on-surface">Wellbees Star Performer</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Recognized for outstanding project delivery and teamwork.</p>
+</div>
+<a class="absolute top-4 right-4 text-xs font-label-md text-accent-red opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">visibility</span> View Activity</a>
+</div>
+<div class="glass-panel p-5 rounded-xl flex items-center gap-4 border-l-4 border-l-accent-red relative group">
+<span class="material-symbols-outlined text-accent-red text-3xl">lightbulb</span>
+<div>
+<h4 class="font-headline-md text-lg text-on-surface">MentorMe Spotlight</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Exceptional guidance and mentorship to junior peers.</p>
+</div>
+<a class="absolute top-4 right-4 text-xs font-label-md text-accent-red opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">visibility</span> View Activity</a>
+</div>
+</div>
+</div>
+<!-- Volunteering & Leadership -->
+<div>
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-md flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">groups</span>
+                    Leadership &amp; Volunteering
+                </h2>
+<div class="space-y-4">
+<div class="glass-panel p-6 rounded-xl relative group">
+<h4 class="font-headline-md text-xl text-on-surface mb-2">Delhi Comic Con 2024</h4>
+<p class="font-label-md text-accent-red mb-2">Event Coordinator &amp; Volunteer</p>
+<p class="font-body-md text-on-surface-variant text-sm">Managed event logistics, crowd control, and participant engagement for one of the largest pop-culture events.</p>
+<a class="absolute top-4 right-4 text-xs font-label-md text-accent-red opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">visibility</span> View Activity</a>
+</div>
+<div class="glass-panel p-6 rounded-xl relative group">
+<h4 class="font-headline-md text-xl text-on-surface mb-2">HCL Achievers League 2024</h4>
+<p class="font-label-md text-accent-red mb-2">Team Lead</p>
+<p class="font-body-md text-on-surface-variant text-sm">Led a team in internal competitions, fostering collaboration and strategic problem-solving to secure top placements.</p>
+<a class="absolute top-4 right-4 text-xs font-label-md text-accent-red opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[14px]">visibility</span> View Activity</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24 py-stack-lg" id="contact">
+<h2 class="font-headline-lg text-headline-lg text-accent-red glow-text mb-stack-lg flex items-center justify-center gap-4 text-center">
+<span class="material-symbols-outlined text-4xl">mail</span>
+                Get In Touch
+            </h2><p class="font-body-lg text-body-lg text-on-surface-variant text-center max-w-2xl mx-auto mb-stack-lg">
+  I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+</p>
+<div class="flex justify-center gap-stack-md mx-auto max-w-container-max flex-wrap max-w-full">
+<!-- Email Card -->
+<a class="glass-panel p-8 rounded-xl flex flex-col items-center text-center gap-4 hover:translate-x-0 hover:-translate-y-2 transition-transform w-[300px]" href="mailto:perelasurya12345@gmail.com">
+<span class="material-symbols-outlined text-accent-red text-4xl">email</span>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-1">Email</h4>
+<p class="font-label-md text-on-surface-variant">perelasurya12345@gmail.com</p>
+</div>
+</a>
+<!-- LinkedIn Card -->
+<a class="glass-panel p-8 rounded-xl flex flex-col items-center text-center gap-4 hover:translate-x-0 hover:-translate-y-2 transition-transform w-[300px]" href="https://www.linkedin.com/in/perla-surya" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-accent-red text-4xl">link</span>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-1">LinkedIn</h4>
+<p class="font-label-md text-on-surface-variant">Professional Profile</p>
+</div>
+</a>
+<!-- GitHub Card -->
+<a class="glass-panel p-8 rounded-xl flex flex-col items-center text-center gap-4 hover:translate-x-0 hover:-translate-y-2 transition-transform w-[300px]" href="https://github.com/PerlaSurya" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-accent-red text-4xl">code</span>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-1">GitHub</h4>
+<p class="font-label-md text-on-surface-variant">Project Repositories</p>
+</div>
+</a>
+<!-- Phone Card -->
+<!-- Location Card -->
+<!-- Availability Card -->
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest border-t border-outline-variant relative z-10 max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-stack-md">
+<div class="flex items-center gap-3">
+<img alt="Perla Surya Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtXsqmtThGiB62PjO4NoGFp4OpsC3HJX_Mc9-YWNjhnMmY1R08jL9NFT8CKGZFYYqEYI7gx4nJpstXX2qxIlgXm36K-0KiSK_kFoWi_tZ2A_DBpcEwosTQyRrXjtduxKQPzPZMPYJwuGhAZA4oIWsyKkYXMG-kKobg1LCsIeTJXPHPQ5WxG3HJrySbAin3N62jJX4qs7boSok2RFipx5Mp9Q0Qy6Ca00pu9_hVSyaxaosUu9ZJvJUq6qw">
+<div class="font-headline-md text-xl text-on-surface font-bold">
+                    Perla Surya
+                </div>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant">
+                © 2026 Perla Surya. All rights reserved.
+            </div>
+<div class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="https://github.com/perlasurya" target="_blank">GitHub</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent-red transition-colors" href="https://www.linkedin.com/in/perla-surya" target="_blank">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+
+
+</body></html>
